@@ -13,10 +13,38 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="资源文件\Class1">
+      <UniqueIdentifier>{75e3c7f3-29cc-41ac-83ba-dc60be8fdb07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\Class2">
+      <UniqueIdentifier>{4804c200-4fef-4ed9-95ad-cff23b6eb475}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\class1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Shaders.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\Class1\class1.fs">
+      <Filter>资源文件\Class1</Filter>
+    </None>
+    <None Include="Shaders\Class1\class1.vs">
+      <Filter>资源文件\Class1</Filter>
+    </None>
+    <None Include="Shaders\Class2\class2.fs">
+      <Filter>资源文件\Class2</Filter>
+    </None>
+    <None Include="Shaders\Class2\class2.vs">
+      <Filter>资源文件\Class2</Filter>
+    </None>
   </ItemGroup>
 </Project>

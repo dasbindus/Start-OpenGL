@@ -118,6 +118,16 @@
   <ItemGroup>
     <ClCompile Include="..\class1.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Shaders.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\Class1\class1.fs" />
+    <None Include="Shaders\Class1\class1.vs" />
+    <None Include="Shaders\Class2\class2.fs" />
+    <None Include="Shaders\Class2\class2.vs" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
