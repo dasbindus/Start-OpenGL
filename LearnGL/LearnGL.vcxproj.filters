@@ -63,5 +63,8 @@
     <Image Include="Texture\wall.jpg">
       <Filter>资源文件\Texture</Filter>
     </Image>
+    <Image Include="Texture\awesomeface.png">
+      <Filter>资源文件\Texture</Filter>
+    </Image>
   </ItemGroup>
 </Project>
