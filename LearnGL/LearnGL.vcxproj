@@ -69,8 +69,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>E:\Workspaces\OpenGL\glfw-3.3.bin.WIN32\include;E:\Workspaces\OpenGL\glew-2.1.0-win32\glew-2.1.0\include;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\Workspaces\OpenGL\glfw-3.3.bin.WIN32\lib-vc2015;E:\Workspaces\OpenGL\glew-2.1.0-win32\glew-2.1.0\lib\Release\Win32;$(LibraryPath)</LibraryPath>
+    <IncludePath>E:\Workspaces\OpenGL\soil\Simple OpenGL Image Library\src;E:\Workspaces\OpenGL\glfw-3.3.bin.WIN32\include;E:\Workspaces\OpenGL\glew-2.1.0-win32\glew-2.1.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\Workspaces\OpenGL\glfw-3.3.bin.WIN32\lib-vc2015;E:\Workspaces\OpenGL\soil\Simple OpenGL Image Library\projects\VC9\Release;E:\Workspaces\OpenGL\glew-2.1.0-win32\glew-2.1.0\lib\Release\Win32;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -79,7 +79,7 @@
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>glew32s.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -116,7 +116,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\class1.cpp" />
+    <ClCompile Include="..\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
@@ -127,6 +127,11 @@
     <None Include="Shaders\Class1\class1.vs" />
     <None Include="Shaders\Class2\class2.fs" />
     <None Include="Shaders\Class2\class2.vs" />
+    <None Include="Shaders\Class3\class3.frag" />
+    <None Include="Shaders\Class3\class3.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Texture\wall.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
