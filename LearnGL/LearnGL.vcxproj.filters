@@ -13,18 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="资源文件\Class1">
-      <UniqueIdentifier>{75e3c7f3-29cc-41ac-83ba-dc60be8fdb07}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="资源文件\Class2">
-      <UniqueIdentifier>{4804c200-4fef-4ed9-95ad-cff23b6eb475}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="资源文件\Class3">
-      <UniqueIdentifier>{c3e9d118-7045-4120-bd94-b67b80beaed7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="资源文件\Texture">
-      <UniqueIdentifier>{8355a0c9-b0b1-4a72-98fb-a9fa11fcd382}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shaders.h">
@@ -35,36 +23,11 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Shaders\Class1\class1.fs">
-      <Filter>资源文件\Class1</Filter>
-    </None>
-    <None Include="Shaders\Class1\class1.vs">
-      <Filter>资源文件\Class1</Filter>
-    </None>
-    <None Include="Shaders\Class2\class2.fs">
-      <Filter>资源文件\Class2</Filter>
-    </None>
-    <None Include="Shaders\Class2\class2.vs">
-      <Filter>资源文件\Class2</Filter>
-    </None>
-    <None Include="Shaders\Class3\class3.vs">
-      <Filter>资源文件\Class3</Filter>
-    </None>
-    <None Include="Shaders\Class3\class3.frag">
-      <Filter>资源文件\Class3</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="Texture\wall.jpg">
-      <Filter>资源文件\Texture</Filter>
-    </Image>
-    <Image Include="Texture\awesomeface.png">
-      <Filter>资源文件\Texture</Filter>
-    </Image>
+    <ClCompile Include="..\glad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
