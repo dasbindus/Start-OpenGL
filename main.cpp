@@ -62,8 +62,8 @@ int main()
 	//Shader ourShader("E:/Workspaces/OpenGL/LearnOpenGL/LearnGL/LearnGL/Shaders/Class2/class2.vs",
 	//	"E:/Workspaces/OpenGL/LearnOpenGL/LearnGL/LearnGL/Shaders/Class2/class2.fs");
 	//Class3
-	Shader ourShader("E:/Workspaces/OpenGL/LearnOpenGL/LearnGL/LearnGL/Shaders/Class3/class3.vs",
-		"E:/Workspaces/OpenGL/LearnOpenGL/LearnGL/LearnGL/Shaders/Class3/class3.frag");
+	Shader ourShader("E:/Workspaces/OpenGL/LearnOpenGL/LearnGL/LearnGL/resources/Shaders/Class3/class3.vs",
+		"E:/Workspaces/OpenGL/LearnOpenGL/LearnGL/LearnGL/resources/Shaders/Class3/class3.frag");
 
 	//setup vertex buffer
 	GLfloat vertices[] = {
@@ -112,7 +112,7 @@ int main()
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	//Load texture
 	int texWidth, texHeight;
-	unsigned char* image = SOIL_load_image("E:/Workspaces/OpenGL/LearnOpenGL/LearnGL/LearnGL/Texture/wall.jpg",
+	unsigned char* image = SOIL_load_image("E:/Workspaces/OpenGL/LearnOpenGL/LearnGL/LearnGL/resources/Texture/wall.jpg",
 		&texWidth, &texHeight, 0, SOIL_LOAD_RGB);
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, texWidth, texHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
 	glGenerateMipmap(GL_TEXTURE_2D);
@@ -128,7 +128,7 @@ int main()
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	//Load texture
-	image = SOIL_load_image("E:/Workspaces/OpenGL/LearnOpenGL/LearnGL/LearnGL/Texture/awesomeface.png",
+	image = SOIL_load_image("E:/Workspaces/OpenGL/LearnOpenGL/LearnGL/LearnGL/resources/Texture/awesomeface.png",
 		&texWidth, &texHeight, 0, SOIL_LOAD_RGB);
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, texWidth, texHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
 	glGenerateMipmap(GL_TEXTURE_2D);
